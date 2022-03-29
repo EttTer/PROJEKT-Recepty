@@ -58,7 +58,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 
 .salaty .komentare {
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   /*padding: 10px;*/
 }
 
@@ -82,7 +82,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 
 h2 {
   font-size: 18px;
-  font-weight: 800px;
+  font-weight: 800;
   padding-left: 10px;
 }
 
@@ -122,5 +122,3 @@ h2 {
 	.hlavní {min-height: 450px; margin: 0 ;}
 	.box{min-height: 200px;}
 	.desktop {display: flex;}
-}
-	
