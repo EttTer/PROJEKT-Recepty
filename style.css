@@ -1,20 +1,27 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
-	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
 }
 
 .paticka {
-	text-align: center;
-	font-size: 14px;
-	color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-	color: silver;
+  color: silver;
 }
 
 /* -------------------------------------------------- */
@@ -33,3 +40,87 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+.hlavní {
+  background-image: url(images/salat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*width: 479px;*/
+  margin-bottom: 10px;
+  min-height: 200px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+}
+
+.salaty .komentare {
+  font-size: 14px;
+  font-weight: 400px;
+  /*padding: 10px;*/
+}
+
+.nadpis {
+  font-size: 28px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.box.první {
+  background-image: url(images/chlebicek.jpg);
+}
+
+.box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 479px;
+  margin-bottom: 10px;
+  min-height: 90px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 800px;
+  padding-left: 10px;
+}
+
+.box.druhý {
+  background-image: url(images/tacos.jpg);
+}
+
+.box.třetí {
+  background-image: url(images/cizrna.jpg);
+}
+.box.čtvrtý {
+  background-image: url(images/burger.jpg);
+}
+
+.recept {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* tablet */
+
+@media screen and (min-width:480px) {
+	.nadpis {font-size: 36px;}
+	h2{font-size: 22px;}
+	.hlavní {min-height: 250px; margin: 0 ;}
+	.box{min-height: 150px;}
+	.recept {padding: 20px;}
+	.tablet {display: flex;
+	flex-wrap: wrap;}
+	.box {flex: 1 1 50%;
+	margin: 0;}
+
+@media screen and (min-width:860px) {
+	.nadpis {font-size: 48px;}
+	h2{font-size: 28px;}
+	.hlavní {min-height: 450px; margin: 0 ;}
+	.box{min-height: 200px;}
+	.desktop {display: flex;}
+}
+	
