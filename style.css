@@ -46,6 +46,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
   background-size: cover;
   background-repeat: no-repeat;
   /*width: 479px;*/
+  width: 100%;
   margin-bottom: 10px;
   min-height: 200px;
 }
@@ -115,6 +116,9 @@ h2 {
 	flex-wrap: wrap;}
 	.box {flex: 1 1 50%;
 	margin: 0;}
+
+
+  /* desktop*/
 
 @media screen and (min-width:860px) {
 	.nadpis {font-size: 48px;}
